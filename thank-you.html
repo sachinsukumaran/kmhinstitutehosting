@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thank you for submitting your application</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="./icons/site.webmanifest">
+    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+        content="Thank you for submitting the form - Request for Prospectus | The Dr. Kamakshi Institute of Medical Sciences &amp; Research (KIMSR) was established in the year 2010 by Dr.T.G.Govindarajan with a vision of generating required human resources for the healthcare industry. It is a unique academic institution that is committed to academic excellence. The institute is an additional facility of Dr. Kamakshi Memorial Hospital Pvt. Ltd., founded in 2005, with a vision “to serve and deliver every patient with the ultimate excellence and devotion, as we care for our loved ones”. The hospital is a 300 bedded Multi Super Specialty hospital at Pallikaranai, situated in the southern part of Chennai, spread over 60 ground land and 75000 square ft building area." />
+
+    <link rel="stylesheet" href="css/critical.css" media="screen">
+    <link rel="stylesheet" href="css/bs_icons.css" media="screen">
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-N6K91DKN2D');
+        gtag('config', 'AW-725331753');
+    </script>
+
+    <!-- Event snippet for Request for Prospectus conversion page -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-316062126/v3cSCO-ms-sCEK7z2pYB' });
+    </script>
+
+
+    <link rel="preload" as="image" href="./images/kimsr_logo.png">
+
+</head>
+
+
+<body style="margin-bottom: 3rem;">
+    {{- partial "header.html" . -}}
+    <h1>Thank you for submitting your application form. If you are selected, you will hear from us shortly.</h1>
+    <p>
+        Redirecting to home page in
+    <div id="counter">5</div>
+    </p>
+    <script>
+        setInterval(function () {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("https://kmhinstitute.com");
+            }
+        }, 1000);
+    </script>
+
+
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>
